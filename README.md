@@ -10,5 +10,5 @@ Today I Learned
 # 240528
 
 
-
+- [markdown 문법 정리](https://github.com/Jeonguks/TIL/blob/main/md_syntax.md)
 
