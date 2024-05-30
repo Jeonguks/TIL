@@ -1,0 +1,102 @@
+# 240528
+
+## React Basic
+
+
+### JSX
+
+> 리액트에서 기본문법으로 사용하는 언어
+> 
+> JSX: JavaScript Extentions
+>
+> JS내부에 HTML 태그가 있는 형태로 이해하면 쉬울듯
+
+- Example 
+
+```jsx
+function Footer() {
+    return (
+        <footer>
+            <h1>This is Footer</h1>
+        </footer>
+    );
+};
+```
+
+
+1. 모든 태그는 닫는 태그로 끝나야함 
+
+    ``<img> </img>``
+    또는
+    ``<img/>``
+
+    닫는 태그가 원래 없는 경우
+
+    ``</br>``
+
+2. 태그의 속성(Attribute) 는 CamelCase로 작성
+
+    ``<img className="image1">``
+
+3. 중괄호를 이용하여 JS표현식 삽입가능
+
+    ```jsx
+    function Footer() {
+        const myName = "홍길동";
+
+        return (
+            <footer>
+                <h1>My name is {myName} !</h1>
+                <h1>This is Footer</h1>
+            </footer>
+        );
+    };
+    ```
+
+
+### Component
+
+>고유한 로직과 모양을 가진 UI ( User Interface )의 일부
+>
+>React Component 는 마크업을 반환하는 자바스크립트 함수
+
+1. 컴포넌트의 이름은 항상 대문자로 시작한다.
+2. 컴포넌트 내부에 컴포넌트를 중첩할 수 있다.
+3. 컴포넌트를 다른 컴포넌트로 내보낼때는 아래를 컴포넌트 제일 아래에 작성 
+4. 컴포넌트를 불러올때는 <컴포넌트이름/> 으로 불러올수 있다. 
+
+    ``export default 컴포넌트이름 ``
+
+    ``<컴포넌트이름/>``
+
+- Example 
+
+```jsx 
+//app.jsx
+
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+
+```
+
+---
+
+
+## Ref
+- https://ko.react.dev/learn
+
+- https://www.inflearn.com/course/%ED%95%9C%EC%9E%85-%EB%A6%AC%EC%95%A1%ED%8A%B8
