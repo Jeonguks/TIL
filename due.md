@@ -1,4 +1,4 @@
-```Mermaid
+```mermaid
 gantt
     title 캡스톤 디자인 진행일정
     dateFormat  MM/DD
